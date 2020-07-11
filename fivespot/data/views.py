@@ -15,8 +15,14 @@ class UsersListCreate(generics.ListCreateAPIView):
 	serializer_class = UsersSerializer
 # Create your views here.
 class User1PostsListCreate(generics.ListCreateAPIView):
-	queryset = Posts.objects.filter(id="1")
+	queryset = Posts.objects.filter(user="1")
 	serializer_class = PostsSerializer
+
+class User2PostsListCreate(generics.ListCreateAPIView):
+	queryset = Posts.objects.filter(user="2")
+	serializer_class = PostsSerializer
+
+
 
 #class UserPostsAPIView(ListAPIView):
 #	queryset = Posts.objects.all()
