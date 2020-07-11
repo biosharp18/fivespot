@@ -13,7 +13,7 @@ export class Card extends Component {
                         <div className="card-image">
                             <figure className="image is-5b3">
                                 
-                            <h1> {this.props.card.thumbnail} </h1> 
+                            <h1> {this.props.card.title} </h1> 
 
                             </figure>
                         </div>
@@ -32,7 +32,7 @@ export class Card extends Component {
                             <div className="content">
 
                                 <p className="title is-6">
-                                {this.props.card.user}
+                                {this.props.card.user.name}
 
                                 </p>
                                 <p>

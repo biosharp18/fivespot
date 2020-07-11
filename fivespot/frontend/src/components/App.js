@@ -110,7 +110,7 @@ class App extends Component {
       {/*<MapView />*/}
       {/*<ProfilePage />*/}
      
-       <HomePage cards={this.state.tourInfo}/> {/*passes array of tourInfo objects to home page property*/}
+       <HomePage cards={this.state.data}/> {/*passes array of objects (data) to home page property*/}
        
       </div>
       
