@@ -22,7 +22,7 @@ class UserPostsListAPIView(generics.ListCreateAPIView):
 		query = self.request.GET.get("q")
 		if query:
 				queryset_list = queryset_list.filter(
-					Q(title__icontains=query)).distinct()
+					Q(user__name__icontains=query)).distinct()
 		return queryset_list
 	
 
