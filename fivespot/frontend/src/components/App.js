@@ -3,7 +3,7 @@ import { render } from "react-dom";
 import HomePage from '../pages/HomePage';
 import ProfilePage from '../pages/ProfilePage';
 import MapView from '../pages/MapView';
-
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 class App extends Component {
 
@@ -100,22 +100,20 @@ class App extends Component {
       });
   }
 
-  
-
-
-  
-
   render() {
     return (
-      
+      <Router>
         <div>
-     
+      
+          <Route exact path="/about" component={MapView} />
+
+          <Route path="/profile" component={ProfilePage} />
+
+        </div>
 
 
-      <MapView />
-     
-
-      </div>
+      </Router>
+        
     
       
     );
