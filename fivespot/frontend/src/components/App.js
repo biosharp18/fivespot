@@ -3,6 +3,7 @@ import { render } from "react-dom";
 import HomePage from '../pages/HomePage';
 import ProfilePage from '../pages/ProfilePage';
 import MapView from '../pages/MapView';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 class App extends Component {
 
@@ -106,13 +107,33 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-      {/*<MapView />*/}
+      <Router>
+        <div>
+     
+
+        <Route exact path="/" render={
+
+         ()=> <HomePage cards={this.state.data}/> 
+            
+       
+        }/>
+
+        <Route path="/map" render={ 
+
+        
+          ()=> <MapView /> 
+            
+              
+        }/>
+
+
+
+      
       {/*<ProfilePage />*/}
      
-       <HomePage cards={this.state.data}/> {/*passes array of objects (data) to home page property*/}
-       
+
       </div>
+    </Router>
       
     );
   }
