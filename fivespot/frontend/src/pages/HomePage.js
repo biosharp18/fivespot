@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Header from '../components/header/Header';
 import Cards from '../components/card/Cards';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 export class HomePage extends Component {
 

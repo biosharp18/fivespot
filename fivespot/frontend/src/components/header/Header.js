@@ -1,20 +1,17 @@
 import React, { Component } from 'react'
 import HomeButton from './HomeButton';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
-import {Link} from 'react-router-dom';
+
 
 export class Header extends Component {
     render() {
         return (
-    <Router>
+
         <nav className="navbar">
             <div className="container">
                 <div className="navbar-brand">
-                    
-                    <Link to="/">
+
                         <p className="title is-3">FIVESPOT</p>
-                    </Link>
-                    
+                 
                 </div>
                 
             </div>
@@ -22,13 +19,12 @@ export class Header extends Component {
 
                 <div className="navbar-start">
                     <div className="navbar-item">
-                        <Link to="/map"> 
+                    
 
                             <a className="button is-primary">
                                 Create a Tour
                             </a>
 
-                        </Link>
                     </div>
                 </div>
                 
@@ -51,7 +47,7 @@ export class Header extends Component {
 
         </nav>
 
-    </Router>
+    
 
            
 

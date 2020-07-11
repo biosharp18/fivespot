@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Header from '../components/header/Header'
-import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 export class MapView extends Component {
   
