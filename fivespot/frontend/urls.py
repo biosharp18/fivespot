@@ -3,5 +3,11 @@ from . import views
 
 
 urlpatterns = [
-    url(r'^$', views.home ),
+    url(r'^[ A-Za-z0-9_@./#&+-]*$', views.home),
+    
 ]
+
+
+
+
+
