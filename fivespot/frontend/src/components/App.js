@@ -1,13 +1,80 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
+import HomePage from '../pages/HomePage';
+
 
 class App extends Component {
+
+
   constructor(props) {
     super(props);
     this.state = {
       data: [],
       loaded: false,
-      placeholder: "Loading"
+      placeholder: "Loading",
+
+
+
+      // Practice Data Structure (somewhat resembles POST format)
+      tourInfo:[
+
+        //each tour is an object in the array, with a number of properties and other objects inside
+        {
+          thumbnail: "Insert Thumbnail Here",
+          title: "Insert Title Here",
+          user: "Insert User Here",
+          description: "Insert Description Here",
+          created_at:"Insert TimeStamp Here",
+
+          //spots are stored in an object array, each spot is an object with sub, body and coords as accessible properties
+          spots: [
+            
+            //spot 1
+            {
+              sub: '',
+              body: '',
+              xCoord: '',
+              yCoord: '',
+
+            },
+            //spot 2
+            {
+              sub:'',
+              body:'',
+              xCoord:'',
+              yCoord:'',
+
+            },
+            //spot 3
+            {
+              sub: '',
+              body: '',
+              xCoord: '',
+              yCoord: '',
+
+            },
+            //spot 4
+            {
+              sub: '',
+              body: '',
+              xCoord: '',
+              yCoord: '',
+
+            },
+            //spot 5
+            {
+              sub:'',
+              body:'',
+              xCoord:'',
+              yCoord:'',
+
+            },
+
+          ]
+        },
+
+      ]
+
     };
   }
 
@@ -31,17 +98,20 @@ class App extends Component {
       });
   }
 
+  
+
+
+  
+
   render() {
     return (
-      <ul>
-        {this.state.data.map(contact => {
-          return (
-            <li key={contact.id}>
-              {contact.Title} - {contact.Description}
-            </li>
-          );
-        })}
-      </ul>
+      <div>
+    
+
+        <HomePage cards={this.state.tourInfo}/> {/*passes array of tourInfo objects to home page property*/}
+       
+      </div>
+      
     );
   }
 }
