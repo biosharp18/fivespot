@@ -9,7 +9,7 @@ export class Header extends Component {
             <div className="container">
                 <div className="navbar-brand">
 
-                    <p>FIVESPOT</p>
+                    <p className="title is-3">FIVESPOT</p>
                     
                 </div>
                 
@@ -17,6 +17,15 @@ export class Header extends Component {
             
             </div>
             <div className="navbar-menu">
+
+                <div className="navbar-start">
+                    <div className="navbar-item">
+                        <a className="button is-primary">
+                            Create a Tour
+                        </a>
+                    </div>
+                </div>
+                
                 <div className="navbar-end">
                     <div className="navbar-item">
                         <a className="button is-primary">

@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
 import HomePage from '../pages/HomePage';
-
+import ProfilePage from '../pages/ProfilePage';
+import MapView from '../pages/MapView';
 
 class App extends Component {
 
@@ -106,9 +107,10 @@ class App extends Component {
   render() {
     return (
       <div>
-    
-
-        <HomePage cards={this.state.tourInfo}/> {/*passes array of tourInfo objects to home page property*/}
+      {/*<MapView />*/}
+      {/*<ProfilePage />*/}
+     
+       <HomePage cards={this.state.tourInfo}/> {/*passes array of tourInfo objects to home page property*/}
        
       </div>
       

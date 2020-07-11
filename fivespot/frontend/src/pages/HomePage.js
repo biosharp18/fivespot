@@ -8,11 +8,11 @@ export class HomePage extends Component {
         return (
         <div>
             <section className="hero is-info is-large is-bold">
-            <div className="hero-head">
+                <div className="hero-head">
                 <Header />
 
 
-            </div>
+                </div>
                
 
                 <div className="hero-body">
@@ -32,10 +32,15 @@ export class HomePage extends Component {
             </section>
 
 
-           
+     
+            <section className="container mt-4">
+
+
+                <Cards cards={this.props.cards}/> 
+
+
+            </section>
             
-              
-            <Cards cards={this.props.cards}/> 
             {/* passes array of tourInfo objects
             (now called cards because that's what the info will be used for)
             to the Cards component*/}
