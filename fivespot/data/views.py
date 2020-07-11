@@ -24,7 +24,21 @@ class UserPostsListAPIView(generics.ListCreateAPIView):
 				queryset_list = queryset_list.filter(
 					Q(user__name__icontains=query)).distinct()
 		return queryset_list
+
+
+class SearchPostsListAPIView(generics.ListCreateAPIView):
+	serializer_class = PostsSerializer
+	def get_queryset(self, *args, **kwargs):	
+		queryset_list = Posts.objects.all()
+		query = self.request.GET.get("q")
+		if query:
+				queryset_list = queryset_list.filter(
+					Q(title__icontains=query)|
+					Q(description__icontains=query)|
+					Q(user__name__icontains=query)).distinct()
+		return queryset_list
 	
+
 
 
 
