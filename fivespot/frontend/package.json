@@ -21,6 +21,7 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
+    "react-google-maps": "^9.4.5",
     "react-router-dom": "^5.2.0"
   }
 }
