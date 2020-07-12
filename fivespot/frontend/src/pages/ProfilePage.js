@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Header from "../components/header/Header";
 
  export class ProfilePage extends Component {
+
+
     render() {
         return (
             <div>
@@ -19,10 +21,11 @@ import Header from "../components/header/Header";
                         <div className="media-content">
                             <div className="content">
                                 <p>
-                                    <strong className="title is-3"> NAME</strong>
+                                    <strong className="title is-3"> name </strong>
                                 
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                        Hello 
+                                        
                                     </p>
                                 </p>
 
