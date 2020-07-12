@@ -27,7 +27,7 @@ export class Map extends Component {
 
     render() {
         return (
-               <div style={{ width: "50vw", height: "50vh" }}>
+               <div style={{ width: "16vw", height: "16vh" }}>
                <WrappedMap 
                googleMapURL={"https://maps.googleapis.com/maps/api/js?key=AIzaSyD0XoftgsSyzc2rnxugt6G2h3ap9-AOsgU"}
                loadingElement={<div style={{ height: "100%" }}  /> }

@@ -3,6 +3,7 @@ import { render } from "react-dom";
 import HomePage from '../pages/HomePage';
 import ProfilePage from '../pages/ProfilePage';
 import MapView from '../pages/MapView';
+import submitted from '../pages/submitted';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 class App extends Component {
@@ -45,11 +46,10 @@ class App extends Component {
         <div>
       
           <Switch>
-            <Route path="/" component={HomePage}/>
+            <Route path="/" exact component={HomePage}/>
             <Route path="/profile" component={ProfilePage}/>
-
-            
-
+            <Route path="/createmap" component={MapView}/>
+            <Route path="/submitted" component={submitted}/>
           </Switch>
 
           
