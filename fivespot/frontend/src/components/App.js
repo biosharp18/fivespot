@@ -3,7 +3,7 @@ import { render } from "react-dom";
 import HomePage from '../pages/HomePage';
 import ProfilePage from '../pages/ProfilePage';
 import MapView from '../pages/MapView';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 class App extends Component {
 
@@ -15,67 +15,6 @@ class App extends Component {
       loaded: false,
       placeholder: "Loading",
 
-
-
-      // Practice Data Structure (somewhat resembles POST format)
-      tourInfo:[
-
-        //each tour is an object in the array, with a number of properties and other objects inside
-        {
-          thumbnail: "Insert Thumbnail Here",
-          title: "Insert Title Here",
-          user: "Insert User Here",
-          description: "Insert Description Here",
-          created_at:"Insert TimeStamp Here",
-
-          //spots are stored in an object array, each spot is an object with sub, body and coords as accessible properties
-          spots: [
-            
-            //spot 1
-            {
-              sub: '',
-              body: '',
-              xCoord: '',
-              yCoord: '',
-
-            },
-            //spot 2
-            {
-              sub:'',
-              body:'',
-              xCoord:'',
-              yCoord:'',
-
-            },
-            //spot 3
-            {
-              sub: '',
-              body: '',
-              xCoord: '',
-              yCoord: '',
-
-            },
-            //spot 4
-            {
-              sub: '',
-              body: '',
-              xCoord: '',
-              yCoord: '',
-
-            },
-            //spot 5
-            {
-              sub:'',
-              body:'',
-              xCoord:'',
-              yCoord:'',
-
-            },
-
-          ]
-        },
-
-      ]
 
     };
   }
@@ -105,9 +44,15 @@ class App extends Component {
       <Router>
         <div>
       
-          <Route exact path="/about" component={MapView} />
+          <Switch>
+            <Route path="/" component={HomePage}/>
+            <Route path="/profile" component={ProfilePage}/>
 
-          <Route path="/profile" component={ProfilePage} />
+            
+
+          </Switch>
+
+          
 
         </div>
 
@@ -115,7 +60,6 @@ class App extends Component {
       </Router>
         
     
-      
     );
   }
 }

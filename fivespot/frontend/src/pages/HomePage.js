@@ -35,17 +35,10 @@ export class HomePage extends Component {
      
             <section className="container mt-4">
 
-                {console.log(this.props.cards)}
 
-                <Cards cards={this.props.cards}/> 
-                {/*continues passing along object array (data)*/}
+                <Cards />
 
             </section>
-            
-      
-        
-
-        
             
 
         </div>
