@@ -311,5 +311,5 @@ export default [
     {
         "featureType": "road.highway"
     }
-]
+];
 

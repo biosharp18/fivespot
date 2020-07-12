@@ -9,21 +9,34 @@ const center = {
 };
 
 
-function Mapp() {
+function MarkerMap() {
+
+const[markers, setMarkers] = React.useState([]);
+
 	return (
 	<GoogleMap 
 	defaultZoom={10} 
 	defaultCenter={center}
 	defaultOptions={{ styles : CrayonGreen }}
+  onClick={(event) => {
+      setMarkers(current => [...current, {
+          lat: event.latLng.lat(),
+          lng: event.latLng.lng()
+      },
+      ]);
+    }}
 	>
-    <Marker position={{ lat: 45.42153, lng: -75.697 }}/>
+    {markers.map(marker => <Marker position={{ lat: marker.lat, lng: marker.lng }}/>)}
+    }
   </GoogleMap>
-);}
+    
+);
+}
 
-const WrappedMap = withScriptjs(withGoogleMap(Mapp));
+const WrappedMap = withScriptjs(withGoogleMap(MarkerMap));
 
 
-export class Map extends Component {
+export class MapMarker extends Component {
 
     render() {
         return (
@@ -39,5 +52,5 @@ export class Map extends Component {
     }
 }
 
-export default Map
+export default MapMarker 
 
