@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { GoogleMap, withScriptjs, withGoogleMap } from "react-google-maps";
+import { GoogleMap, withScriptjs, withGoogleMap, Marker } from "react-google-maps";
 import CrayonGreen from './CrayonGreen';
 
 
@@ -14,8 +14,10 @@ function Mapp() {
 	<GoogleMap 
 	defaultZoom={10} 
 	defaultCenter={center}
-	defaultOptions={{style: CrayonGreen}}
-	/>
+	defaultOptions={{ styles : CrayonGreen }}
+	>
+    <Marker position={{ lat: 45.42153, lng: -75.697 }}/>
+  </GoogleMap>
 );}
 
 const WrappedMap = withScriptjs(withGoogleMap(Mapp));
