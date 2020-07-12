@@ -37,7 +37,7 @@ export class Header extends Component {
                         <Link to='/profile'>
 
 
-                                <img src="https://www.canbind.ca/wp-content/uploads/2018/04/blank-profile-picture-973460_640-300x300.png" width="45" height="32" className="is-rounded" />
+                                <img src="https://www.canbind.ca/wp-content/uploads/2018/04/blank-profile-picture-973460_640-300x300.png" width="45" height="50" className="is-rounded" />
 
                         
                         </Link>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 
 export class Cards extends Component {
 
@@ -9,7 +9,7 @@ export class Cards extends Component {
             
             <div className=" row columns is-multiline">
                 <div className="column is-4"> {/*Figure out column sizing later*/}
-
+            <Link to="/entertour">
                 <div className="card">
                     <div className="card-image">
                         <figure className="image is-16by9">
@@ -41,16 +41,14 @@ export class Cards extends Component {
                             <p>
                                 Cabbagetown used to be so full of fresh markets.Where did they go?
                             </p>
-                            <p>
-                                Timestamp
-                            </p>
+                           
                     
                         </div>
                         
                     </div>
 
                     </div>
-
+                    </Link>
 
                 </div>
 
@@ -88,9 +86,7 @@ export class Cards extends Component {
                                 The amazing food is among the many things I've grown to love and and appreciate about my city
 
                             </p>
-                            <p>
-                                Timestamp
-                            </p>
+                          
                     
                         </div>
                         
@@ -107,7 +103,7 @@ export class Cards extends Component {
                     <div className="card-image">
                         <figure className="image is-16by9">
                             
-                        <h1> <img src="https://maps.googleapis.com/maps/api/streetview?size=400x400&location=43.889585,-79.300366
+                        <h1> <img src="https://maps.googleapis.com/maps/api/streetview?size=400x400&location=44.7866, 20.4489
 &fov=80&heading=70&pitch=0
 &key=AIzaSyD0XoftgsSyzc2rnxugt6G2h3ap9-AOsgU"/> </h1> 
 
@@ -119,7 +115,7 @@ export class Cards extends Component {
                         <div className="media">
                             <div className="media-content">
                                 <p className="title is-4"> 
-                                  My Dear Hometown- the City of Markham
+                                 Belgrade- a hidden gem of europe
 
                                 </p>
                             </div>
@@ -128,15 +124,13 @@ export class Cards extends Component {
                         <div className="content">
 
                             <p className="title is-6">
-                                Joseph Lin
+                                Bogdan Brkic
 
                             </p>
                             <p>
-                                The city of Markham was founded in 1868 = its where I spent my childhod
+                                After returning back to my home city of Belgrade, after spending 20 years as a phyics teacher, i truly began to appreciate it more
                             </p>
-                            <p>
-                                Timestamp
-                            </p>
+                           
                     
                         </div>
                         
@@ -189,9 +183,7 @@ export class Cards extends Component {
                             <p>
                                 A town with charm and a surpringly vibrant upbeat culture
                             </p>
-                            <p>
-                                Timestamp
-                            </p>
+                           
                     
                         </div>
                         
@@ -233,9 +225,7 @@ export class Cards extends Component {
                             <p>
                                 Aethestic coffee shops, relaxing lackside walks and much more
                             </p>
-                            <p>
-                                Timestamp
-                            </p>
+                           
                     
                         </div>
                         
@@ -281,9 +271,7 @@ export class Cards extends Component {
                             <p>
                                 Besides being known for it's scenic views, this little town has some very interesting and rich local history
                             </p>
-                            <p>
-                                Timestamp
-                            </p>
+                           
                     
                         </div>
                         

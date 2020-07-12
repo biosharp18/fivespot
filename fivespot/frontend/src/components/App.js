@@ -4,6 +4,7 @@ import HomePage from '../pages/HomePage';
 import ProfilePage from '../pages/ProfilePage';
 import MapView from '../pages/MapView';
 import submitted from '../pages/submitted';
+import EnterTour from '../pages/EnterTour';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 class App extends Component {
@@ -50,6 +51,7 @@ class App extends Component {
             <Route path="/profile" component={ProfilePage}/>
             <Route path="/createmap" component={MapView}/>
             <Route path="/submitted" component={submitted}/>
+            <Route path="/entertour" component={EnterTour}/>
           </Switch>
 
           

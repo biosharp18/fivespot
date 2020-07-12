@@ -21,7 +21,7 @@ export class HomePage extends Component {
                             FIVESPOT
                         </h1>
                         <h2 className="subtitle">
-                            bs tagline that sounds cool but is bs
+                            Bite sized virtual tours
                         </h2>
 
 

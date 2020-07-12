@@ -72,7 +72,7 @@ export class MapView extends Component {
         <div className="container mt-6"> 
            
         <input className="input is-large" type="text" placeholder="Title" ></input>
-        
+        <textarea className="textarea" placeholder="Description"></textarea>
         
                 <div className=" box columns mt-4 mb-4">
 
